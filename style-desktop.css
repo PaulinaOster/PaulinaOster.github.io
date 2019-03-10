@@ -7,9 +7,18 @@ audio {
     left: 5px;
     transform: none;
 }
-
 .subtitle {
     bottom: 5px;
     right: 20px;
     transform: none;
+}
+.about-me {
+    flex-direction: row;
+}
+.about-me__text {
+    width: 70%;
+}
+.about-me__photo {
+    padding: 20px;
+    width: 30%;
 }
