@@ -1,9 +1,12 @@
+.hero__background {
+    height: auto;
+}
 .navigation {
     flex-direction: row;
     justify-content: space-around;
 }
 audio {
-    width: 300px;
+    width: 33%;
     left: 5px;
     transform: none;
 }
