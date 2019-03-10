@@ -15,24 +15,22 @@ body {
     top: 0;
 }
 .navigation {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     background-color: darkgreen;
 }
 .navigation p {
     margin: 0;
-    padding: 0;
 }
-.navigation a, .footer a {
+.nav-link {
     text-decoration: none;
     text-transform: uppercase;
-    padding: 0 3px 3px 3px;
     color: greenyellow;
+    padding: 0 3px 3px 3px;
 }
-.navigation a:hover, .footer a:hover {
+.nav-link:hover {
     color: darkgreen;
     background-color: greenyellow;
+    padding: 0px 3px;
 }
 .hero { 
     position: relative;
@@ -58,7 +56,7 @@ audio {
     right:50%;
     transform: translateX(50%);
 }
-.title, .subtitle {
+.titles {
     background-color: rgb(230, 255, 230);
     background-color: rgba(230, 255, 230, 0.5);
     position: absolute;
@@ -92,19 +90,23 @@ audio {
     flex-direction: column-reverse;
 }
 .about-me__text {
-    display: flex;
     width: 100%;
-    flex-direction: column;
 }
 .about-me__text h3 {
     margin: 5px;
 }
-ul {
+.list {
     padding: 0 20px 0 20px;
     margin: 5px;
-}
-li {
     list-style: circle;
+}
+.list a {
+    color: darkgreen;
+    text-decoration: none;
+}
+.list a:hover {
+    color: orchid;
+    text-decoration: underline;
 }
 .about-me__photo {
     display: flex;
@@ -115,6 +117,45 @@ li {
 }
 .about-me__photo img {
     width: 100%;
+    border: 2px solid darkgreen;
+}
+.section {
+    padding: 10px 0;
+    border-top: 2px solid darkgreen;
+}
+.flex--column {
+    display: flex;
+    flex-direction: column;
+}
+.tech-skills {
+    align-items: center;
+}
+.flex--row {
+    display: flex;
+    flex-direction: column;
+}
+.tech-skills__item {
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.tech-skills__item img {
+    height: 150px;
+}
+.license {
+    font-size: 12px;
+    text-align: center;
+    margin: 10px;
+}
+.license a {
+    color: darkgreen;
+    text-decoration: none;
+}
+.license a:hover {
+    color: orchid;
+    text-decoration: underline;
 }
 .footer {
     position: -webkit-sticky;
@@ -123,9 +164,7 @@ li {
     display: flex;
     justify-content: center;
 }
-
 .footer a {
-
     padding: 0px 3px;
     background-color: darkgreen;
 }

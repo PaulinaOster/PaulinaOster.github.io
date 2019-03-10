@@ -2,103 +2,119 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="style-mobile.css">
-    <link rel="stylesheet" media="only screen and (min-width: 600px)" type="text/css" href="style-desktop.css">
+    <link rel="stylesheet" type="text/css" href="css/style-mobile.css">
+    <link rel="stylesheet" media="only screen and (min-width: 600px)" type="text/css" href="css/style-desktop.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <title>Paulina Oster - Welcome to my homepage!</title>
 </head>
 
 <body>
     <div class="top"></div>
     <header id="header" class="header">
-        <nav id="navigation" class="navigation">
-            <p><a href="#about-me">About Me</a></p>
-            <p><a href="#projects">My Projects</a></p>
-            <p><a href="#tech-skills">My Tech Skills</a></p>
+        <nav id="navigation" class="navigation flex--column">
+            <p><a class="nav-link" href="#about-me">About Me</a></p>
+            <p><a class="nav-link" href="#projects">My Projects</a></p>
+            <p><a class="nav-link" href="#tech-skills">My Tech Skills</a></p>
         </nav>
     </header>
     <main id="main" class="main">
         <section id="hero" class="hero">
             <div class="hero__background">
-                <img src="rower1.jpg" alt="bicycles">
-                <img src="foto.JPG" alt="my photo">
-                <img src="rower.JPG" alt="bicycles">
+                <img src="images/rower1.jpg" alt="bicycles">
+                <img src="images/foto.JPG" alt="my photo">
+                <img src="images/rower.JPG" alt="bicycles">
             </div>
-            <audio src="Music.mp3" controls autoplay loop>
+            <audio src="media/Music.mp3" controls autoplay loop>
             </audio>
-            <div class="title">
+            <div class="title titles">
                 <h1>Paulina Oster</h1>
             </div>
-            <div class="subtitle">
+            <div class="subtitle titles">
                 <h2>Lublin, Poland</h2>
             </div>
         </section>
-        <section id="about-me" class="about-me">
-            <div class="about-me__text">
+        <section id="about-me" class="about-me section">
+            <div class="about-me__text flex--column">
                 <h2>About Me</h2>
                 <p>I am attending front-end web developement course at infoShareAcademy in Lublin and hope to become a
                     web
                     developer
-                    in the future. I love cycling. My interests include: health&amp;fitness, science&amp;technology,
-                    LGBT
-                    culture,
-                    movies.</p>
+                    in the future. I love cycling and watching Netflix. My interests also include: health&amp;fitness,
+                    science&amp;technology, LGBT culture.</p>
                 <h3>Work Experience</h3>
-                <ul>
+                <ul class="list">
                     <li>junior accountant at Baster Audytor</li>
                     <li>customer service advisor at BZWBK (Santander)</li>
                 </ul>
                 <h3>Links</h3>
-                <ul>
+                <ul class="list">
                     <li><a href="https://www.facebook.com/paulina.anniyan" target="_blank">facebook</a></li>
                     <li><a href="https://plus.google.com/102419792991406464993" target="_blank">google+</a></li>
                     <li><a href="https://github.com/PaulinaOster" target="_blank">GitHub</a></li>
                 </ul>
             </div>
             <div class="about-me__photo">
-                <img src="Photo.jpg" alt="my photo" />
+                <img src="images/Photo.jpg" alt="my photo" />
             </div>
         </section>
-        <section id="projects">
+        <section id="projects" class="projects section">
             <h2>My projects</h2>
-            <ul>
+            <ul class="list">
                 <li><a href="http://www.basteraudytor.pl" target="_blank">accountant's office homepage</a></li>
             </ul>
         </section>
-        <section id="tech-skills" class="tech-skills">
+        <section id="tech-skills" class="tech-skills section flex--column">
             <div class="tech-skills__title">
                 <h2>My Tech Skills</h2>
             </div>
-            <div class="tech-skills__list">
-                <div class="tech-skills__list-row">
-                    <div class="tech-skills__list-item">
-                        <img />
-                        <p>Linux</p>
+            <div class="flex--column">
+                <div class="flex--row">
+                    <div class="tech-skills__item">
+                        <img src="images/linux.png" alt="Linux" />
+                        <p>Ubuntu Linux</p>
                     </div>
-                    <div class="tech-skills__list-item">
-                        <img />
-                        <p>GIT</p>
+                    <div class="tech-skills__item">
+                        <img src="images/github.png" alt="GIT and GitHub" />
+                        <p>GIT and GitHub</p>
                     </div>
-                    <div class="tech-skills__list-item">
-                        <img />
+                    <div class="tech-skills__item">
+                        <img src="images/html.png" alt="HTML5" />
                         <p>HTML5</p>
                     </div>
                 </div>
-                <div class="tech-skills__list-row">
-                    <div class="tech-skills__list-item">
-                        <img />
+                <div class="flex--row">
+                    <div class="tech-skills__item">
+                        <img src="images/css.png" alt="CSS3" />
                         <p>CSS3</p>
                     </div>
                 </div>
             </div>
         </section>
+        <div class="section">
+            <div class="license">Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a
+                    href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a
+                    href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0"
+                    target="_blank">CC 3.0 BY</a>
+                <p>
+                    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                        <img style="border:0;width:88px;height:31px"
+                            src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Poprawny CSS!" />
+                    </a>
+                </p>
+            </div>
+        </div>
     </main>
     <footer class="footer">
-        <a href="#top">Back to top</a>
+        <a class="nav-link" href="#top">Back to top</a>
     </footer>
 </body>
 
