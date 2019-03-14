@@ -18,9 +18,8 @@
 </head>
 
 <body>
-    <div class="top"></div>
     <header id="header" class="header">
-        <nav id="navigation" class="navigation flex--column">
+        <nav id="navigation" class="navigation flex flex--column">
             <p><a class="nav-link" href="#about-me">About Me</a></p>
             <p><a class="nav-link" href="#projects">My Projects</a></p>
             <p><a class="nav-link" href="#tech-skills">My Tech Skills</a></p>
@@ -28,27 +27,25 @@
     </header>
     <main id="main" class="main">
         <section id="hero" class="hero">
-            <div class="hero__background">
+            <div class="hero__background flex">
                 <img src="./images/rower1.jpg" alt="bicycles">
                 <img src="./images/foto.JPG" alt="my photo">
                 <img src="./images/rower.JPG" alt="bicycles">
             </div>
-            <audio src="./media/Music.mp3" controls autoplay loop>
+            <audio class="audio" src="./media/Music.mp3" controls autoplay loop>
             </audio>
-            <div class="title titles">
+            <div class="hero__title title">
                 <h1>Paulina Oster</h1>
             </div>
-            <div class="subtitle titles">
+            <div class="hero__title subtitle">
                 <h2>Lublin, Poland</h2>
             </div>
         </section>
-        <section id="about-me" class="about-me section">
-            <div class="about-me__text flex--column">
+        <section id="about-me" class="about-me section flex">
+            <div class="about-me__text flex flex--column">
                 <h2>About Me</h2>
                 <p>I am attending front-end web developement course at infoShareAcademy in Lublin and hope to become a
-                    web
-                    developer
-                    in the future. I love cycling and watching Netflix. My interests also include: health&amp;fitness,
+                    web developer in the future. I love cycling and watching Netflix. My interests also include: health&amp;fitness,
                     science&amp;technology, LGBT culture.</p>
                 <h3>Work Experience</h3>
                 <ul class="list">
@@ -62,7 +59,7 @@
                     <li><a href="https://github.com/PaulinaOster" target="_blank">GitHub</a></li>
                 </ul>
             </div>
-            <div class="about-me__photo">
+            <div class="about-me__photo flex">
                 <img src="./images/Photo.jpg" alt="my photo" />
             </div>
         </section>
@@ -72,12 +69,12 @@
                 <li><a href="http://www.basteraudytor.pl" target="_blank">accountant's office homepage</a></li>
             </ul>
         </section>
-        <section id="tech-skills" class="tech-skills section flex--column">
+        <section id="tech-skills" class="tech-skills section flex flex--column">
             <div class="tech-skills__title">
                 <h2>My Tech Skills</h2>
             </div>
-            <div class="flex--column">
-                <div class="flex--row">
+            <div class="flex flex--column">
+                <div class="flex flex--row">
                     <div class="tech-skills__item">
                         <img src="./images/linux.png" alt="Linux" />
                         <p>Ubuntu Linux</p>
@@ -91,7 +88,7 @@
                         <p>HTML5</p>
                     </div>
                 </div>
-                <div class="flex--row">
+                <div class="flex flex--row">
                     <div class="tech-skills__item">
                         <img src="./images/css.png" alt="CSS3" />
                         <p>CSS3</p>
