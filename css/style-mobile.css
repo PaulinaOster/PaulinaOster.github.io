@@ -39,7 +39,6 @@ body {
     background-color: darkgreen;
 }
 .hero__background {
-    display: flex;
     padding: 0; 
     margin: 0;
     height: 250px;
@@ -50,23 +49,23 @@ body {
     margin: 0;
     object-fit: cover;
 }
-audio {
+.audio {
     position: absolute;
     width: 75%;
     bottom: 5px;
     right:50%;
     transform: translateX(50%);
 }
-.titles {
+.hero__title {
     background-color: rgb(230, 255, 230);
     background-color: rgba(230, 255, 230, 0.5);
     position: absolute;
-}
-.title {
-    top: 20px;
     right:50%;
     transform: translateX(50%);
     text-align: center;
+}
+.title {
+    top: 20px;
 }
 .title h1 {
     font-size: 40px;
@@ -77,9 +76,6 @@ audio {
 }
 .subtitle {
     bottom: 65px;
-    right:50%;
-    transform: translateX(50%);
-    text-align: center;
 }
 .subtitle h2 {
     opacity: 1;
@@ -87,7 +83,6 @@ audio {
     margin: 0;
 }
 .about-me {
-    display: flex;
     flex-direction: column-reverse;
 }
 .about-me__text {
@@ -110,7 +105,6 @@ audio {
     text-decoration: underline;
 }
 .about-me__photo {
-    display: flex;
     justify-content: center;
     align-items: flex-start;
     width: 100%;
@@ -124,16 +118,18 @@ audio {
     padding: 10px 0;
     border-top: 2px solid darkgreen;
 }
-.flex--column {
+.flex {
     display: flex;
+}
+.flex--column {
+    flex-direction: column;
+}
+
+.flex--row {
     flex-direction: column;
 }
 .tech-skills {
     align-items: center;
-}
-.flex--row {
-    display: flex;
-    flex-direction: column;
 }
 .tech-skills__item {
     width: 100%;
