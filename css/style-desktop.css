@@ -1,5 +1,5 @@
 .hero__background {
-    height: auto;
+    height: 600px;
 }
 .navigation {
     flex-direction: row;
