@@ -84,6 +84,8 @@ body {
 }
 .about-me {
     flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
 }
 .about-me__text {
     width: 100%;
@@ -106,8 +108,8 @@ body {
 }
 .about-me__photo {
     justify-content: center;
-    align-items: flex-start;
-    width: 100%;
+    align-items: center;
+    width: 90%;
     padding: 0;
 }
 .about-me__photo img {
@@ -139,7 +141,7 @@ body {
     text-align: center;
 }
 .tech-skills__item img {
-    height: 150px;
+    height: 100px;
 }
 .license {
     font-size: 12px;

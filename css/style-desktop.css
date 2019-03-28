@@ -1,22 +1,8 @@
 .hero__background {
     height: 600px;
 }
-.navigation {
-    flex-direction: row;
-    justify-content: space-around;
-}
-.audio {
-    width: 33%;
-    left: 5px;
-    transform: none;
-}
-.subtitle {
-    bottom: 10px;
-    right: 10px;
-    transform: none;
-}
 .about-me {
-    flex-direction: row;
+    align-items: flex-start;
 }
 .about-me__text {
     width: 70%;
@@ -25,11 +11,10 @@
     padding: 20px;
     width: 30%;
 }
-.flex--row {
-    flex-direction: row;
-    justify-content: center;
-}
 .tech-skills__item {
     width: 33.3%;
     padding: 10px 50px 10px 50px;
+}
+.tech-skills__item img {
+    height: 170px;
 }
