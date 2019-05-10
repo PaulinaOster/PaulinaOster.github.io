@@ -52,7 +52,7 @@ body {
 .audio {
     position: absolute;
     width: 75%;
-    bottom: 5px;
+    bottom: -60px;
     right:50%;
     transform: translateX(50%);
 }
@@ -75,7 +75,7 @@ body {
     margin: 0;
 }
 .subtitle {
-    bottom: 65px;
+    bottom: 5px;
 }
 .subtitle h2 {
     opacity: 1;
@@ -87,8 +87,11 @@ body {
     justify-content: center;
     align-items: center;
 }
+.about-me h2 {
+    text-align: center;
+}
 .about-me__text {
-    width: 100%;
+    width: 90%;
 }
 .about-me__text h3 {
     margin: 5px;
@@ -109,12 +112,13 @@ body {
 .about-me__photo {
     justify-content: center;
     align-items: center;
-    width: 90%;
-    padding: 0;
+    width: 70%;
+    padding: 60px 0 0 0;
 }
 .about-me__photo img {
     width: 100%;
     border: 2px solid darkgreen;
+    border-radius: 10px;
 }
 .section {
     padding: 10px 0;
@@ -124,11 +128,22 @@ body {
     display: flex;
 }
 .flex--column {
+    display: flex;
     flex-direction: column;
 }
-
 .flex--row {
+    display: flex;
     flex-direction: column;
+}
+.center { 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.projects {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .tech-skills {
     align-items: center;
@@ -160,7 +175,6 @@ body {
     position: -webkit-sticky;
     position: sticky;
     bottom: 0;
-    display: flex;
     justify-content: center;
 }
 .footer a {

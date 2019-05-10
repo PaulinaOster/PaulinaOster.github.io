@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="./css/style-mobile.css">
-    <link rel="stylesheet" media="screen and (min-width: 500px)" type="text/css" href="./css/style-tablet.css">
+    <link rel="stylesheet" media="screen and (min-width: 600px)" type="text/css" href="./css/style-tablet.css">
     <link rel="stylesheet" media="screen and (min-width: 900px)" type="text/css" href="./css/style-desktop.css">
     <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
@@ -20,7 +20,7 @@
 
 <body>
     <header id="header" class="header">
-        <nav id="navigation" class="navigation flex flex--column">
+        <nav id="navigation" class="navigation flex--column">
             <p><a class="nav-link" href="#about-me">About Me</a></p>
             <p><a class="nav-link" href="#projects">My Projects</a></p>
             <p><a class="nav-link" href="#tech-skills">My Tech Skills</a></p>
@@ -43,39 +43,46 @@
             </div>
         </section>
         <section id="about-me" class="about-me section flex">
-            <div class="about-me__text flex flex--column">
+            <div class="about-me__text flex--column">
                 <h2>About Me</h2>
-                <p>I am attending front-end web developement course at infoShareAcademy in Lublin and hope to become a
-                    web developer in the future. I love cycling and watching Netflix. My interests also include: health&amp;fitness,
+                <p>I graduated front-end web developement course at infoShare Academy in Lublin and aspire to become a
+                    professional web developer. I enjoy programming and creating web applications. I have an
+                    analitycal, inquisitive mind and like to solve problems. I love cycling and watching Netflix. My
+                    interests also include:
+                    health&amp;fitness,
                     science&amp;technology, LGBT culture.</p>
-                <h3>Work Experience</h3>
-                <ul class="list">
-                    <li>junior accountant at Baster Audytor</li>
-                    <li>customer service advisor at BZWBK (Santander)</li>
-                </ul>
                 <h3>Links</h3>
                 <ul class="list">
-                    <li><a href="https://www.facebook.com/paulina.anniyan" target="_blank">facebook</a></li>
-                    <li><a href="https://plus.google.com/102419792991406464993" target="_blank">google+</a></li>
+                    <li><a href="https://www.linkedin.com/in/paulina-oster/" target="_blank">Linkedin</a></li>
                     <li><a href="https://github.com/PaulinaOster" target="_blank">GitHub</a></li>
+                    <li><a href="https://edabit.com/user/nTjcng2bHpB53wBhH" target="_blank">Edabit</a></li>
+                    <li><a href="https://www.codewars.com/users/PaulinaOster" target="_blank">Codewars</a></li>
                 </ul>
             </div>
             <div class="about-me__photo flex">
                 <img src="./images/Photo.jpg" alt="my photo" />
             </div>
         </section>
-        <section id="projects" class="projects section">
-            <h2>My projects</h2>
+        <section id="projects" class="projects section flex">
             <ul class="list">
-                <li><a href="http://www.basteraudytor.pl" target="_blank">accountant's office homepage</a></li>
+                <h2>My projects</h2>
+                <li><a href="http://www.basteraudytor.pl" target="_blank">accountant's office company page</a></li>
+            </ul>
+            <ul class="list">
+                <h2>Team projects</h2>
+                <li><a href="http://5starmovies.surge.sh/" target="_blank">5starMovies landing page</a></li>
+                <li><a href="http://5starmovies.surge.sh/minigame.html" target="_blank">5starMovies - a JavaScript
+                        minigame</a></li>
+                <li><a href="http://5starmovies-app.surge.sh/" target="_blank">5starMovies - a React application</a>
+                </li>
             </ul>
         </section>
-        <section id="tech-skills" class="tech-skills section flex flex--column">
+        <section id="tech-skills" class="tech-skills section flex--column">
             <div class="tech-skills__title">
                 <h2>My Tech Skills</h2>
             </div>
-            <div class="flex flex--column">
-                <div class="flex flex--row">
+            <div class="flex--column center">
+                <div class="flex--row center">
                     <div class="tech-skills__item">
                         <img src="./images/linux.png" alt="Linux" />
                         <p>Ubuntu Linux</p>
@@ -85,18 +92,36 @@
                         <p>GIT and GitHub</p>
                     </div>
                     <div class="tech-skills__item">
+                        <img src="./images/scrum.png" alt="Scrum" />
+                        <p>Scrum</p>
+                    </div>
+                </div>
+                <div class="flex--row center">
+                    <div class="tech-skills__item">
                         <img src="./images/html.png" alt="HTML5" />
                         <p>HTML5</p>
                     </div>
-                </div>
-                <div class="flex flex--row">
                     <div class="tech-skills__item">
                         <img src="./images/css.png" alt="CSS3" />
-                        <p>CSS3</p>
+                        <p>CSS3, BEM, RWD</p>
                     </div>
                     <div class="tech-skills__item">
-                        <img src="./images/javascript.png" alt="JavaScript" />
-                        <p>JavaScript</p>
+                        <img src="./images/javascript.png" alt="JavaScript ES6" />
+                        <p>JavaScript ES6</p>
+                    </div>
+                </div>
+                <div class="flex--row center">
+                    <div class="tech-skills__item">
+                        <img src="./images/react.png" alt="React" />
+                        <p>React JS</p>
+                    </div>
+                    <div class="tech-skills__item">
+                        <img src="./images/redux.png" alt="Redux" />
+                        <p>Redux</p>
+                    </div>
+                    <div class="tech-skills__item">
+                        <img src="./images/ajax.jpg" alt="AJAX" />
+                        <p>AJAX</p>
                     </div>
                 </div>
             </div>
@@ -115,7 +140,7 @@
             </div>
         </div>
     </main>
-    <footer class="footer">
+    <footer class="footer flex">
         <a class="nav-link" href="#top">Back to top</a>
     </footer>
 </body>

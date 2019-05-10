@@ -9,7 +9,11 @@
 }
 .about-me__photo {
     padding: 20px;
-    width: 30%;
+    width: 20%;
+}
+.projects {
+    justify-content: space-around;
+    flex-direction: row;
 }
 .tech-skills__item {
     width: 33.3%;

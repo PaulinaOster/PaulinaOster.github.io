@@ -8,6 +8,7 @@
 .audio {
     width: 33%;
     left: 5px;
+    bottom: 5px;
     transform: none;
 }
 .subtitle {
@@ -24,6 +25,9 @@
 .about-me__photo {
     padding: 10px;
     width: 40%;
+}
+.projects {
+    align-items: flex-start;
 }
 .flex--row {
     flex-direction: row;
